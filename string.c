@@ -1,16 +1,21 @@
 #include <stdio.h>
-#include <string.h>
+
 
 int main()
 {
-char str[] = "efgweriuhweiuhwepriuohv";
-int i;
-int num = strlen(str);
-for (i = 0; i < num; i++) {
-    if (str[i] != 'i') {
-        str[i] = '_';
+char sentence[100];
+char word[100];
+printf("Type a sentence below:\n");
+for (int i = 0; i <= 100; i++)
+{
+    do
+    {
+    scanf("%c", &sentence[i]);
+    printf("%c", sentence[i]);
     }
+    while (sentence[i] != '\n');
+    return 0;
 }
-printf("%s", str);
+
 return 0;
 }
