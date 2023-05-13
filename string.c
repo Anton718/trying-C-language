@@ -5,6 +5,7 @@ int main()
 {
 char sentence[100];
 char word[100];
+char *w;
 printf("Type a sentence below:\n");
 for (int i = 0; i <= 100; i++)
 {
@@ -12,9 +13,16 @@ for (int i = 0; i <= 100; i++)
     {
     scanf("%c", &sentence[i]);
     printf("%c", sentence[i]);
+    word[i] = sentence[i];
+    if (word[i] == ' ') 
+    {
+        *w = word[0];
+    }
     }
     while (sentence[i] != '\n');
+    printf("%s", w);
     return 0;
+
 }
 
 return 0;
