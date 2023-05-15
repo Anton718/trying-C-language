@@ -1,3 +1,4 @@
 The first parameter specifies where to store the file content, which will be in the myString array we just created.
 The second parameter specifies the maximum size of data to read, which should match the size of myString (100).
 The third parameter requires a file pointer that is used to read the file (fptr in our example).
+testing the connection
