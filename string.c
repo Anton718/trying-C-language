@@ -1,11 +1,13 @@
 #include <stdio.h>
 
+// changes to test connection 
 
 int main()
 {
 char sentence[100];
 char word[100];
 char *w;
+int x;
 printf("Type a sentence below:\n");
 for (int i = 0; i <= 100; i++)
 {
